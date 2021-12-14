@@ -1588,7 +1588,7 @@ enum MDBX_cursor_op {
   /** Position at first key-value pair lesser than or equal to specified, 
    * return same as MDBX_SET_LOWERBOUND 
   */
-  MDBX_SET_UPPERBOUND
+  MDBX_SET_LOWERBOUND_REV
 };
 #ifndef __cplusplus
 /** \ingroup c_cursors */

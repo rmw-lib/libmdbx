@@ -14542,7 +14542,7 @@ int mdbx_cursor_get(MDBX_cursor *mc, MDBX_val *key, MDBX_val *data,
       rc = MDBX_RESULT_TRUE;
     break;
   }
-  case MDBX_SET_UPPERBOUND: {
+  case MDBX_SET_LOWERBOUND_REV: {
     if (unlikely(key == NULL || data == NULL))
       return MDBX_EINVAL;
     MDBX_val save_data = *data;
